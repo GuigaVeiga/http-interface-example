@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: http-interface
+  main:
+    web-application-type: reactive
