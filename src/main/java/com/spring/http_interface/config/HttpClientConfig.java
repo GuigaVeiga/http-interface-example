@@ -13,9 +13,9 @@ public class HttpClientConfig {
     @Bean
     public HttpClient httpClient() {
         return HttpClient.create()
-                         .proxy(proxy -> proxy.type(ProxyProvider.Proxy.HTTP)
-                                              .host("proxy.example.com")
-                                              .port(8080));
+                .proxy(proxy -> proxy.type(ProxyProvider.Proxy.HTTP)
+                        .host("proxy.example.com")
+                        .port(8080));
     }
 
     @Bean
@@ -25,4 +25,7 @@ public class HttpClientConfig {
                         .baseUrl("http://example.com")
                         .build();
     }
+
+
+
 }
